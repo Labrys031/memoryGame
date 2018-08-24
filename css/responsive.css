@@ -1,0 +1,71 @@
+@media screen and (max-width: 1354px){
+  .deck .card {
+    height: 130px;
+    width: 130px;
+}
+@media screen and (max-width: 1220px){
+  .deck .card {
+    height: 110px;
+    width: 110px;
+}
+@media screen and (max-width: 1066px){
+  .deck .card {
+    height: 90px;
+    width: 90px;
+}
+  img {
+    width: 0px;
+    height: 0px;
+}
+  button {
+  padding: 2px 5px;
+  font-size: 14px;
+}
+@media screen and (max-width: 895px){
+  .deck .card {
+    height: 70px;
+    width: 70px;
+}
+button {
+  padding: 2px 5px;
+  font-size: 14px;
+}
+@media screen and (max-width: 815px){
+  header {
+  	width: 100%;
+  	position: relative;
+  }
+  .main {
+    height: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .mainL {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .scorePannel{
+  	position: relative;
+  	flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .spacer {
+    height: 10px;
+    
+  }
+  .mainR {
+    min-width: 430px;
+    clear: both;
+  }
+  .popup {
+  	width: 70%;
+  }
+  #playAgain {
+  	width: 40%;
+  }

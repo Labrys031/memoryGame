@@ -14,7 +14,7 @@ h1, h2{
 .main{
   background: linear-gradient(120deg, #86bdfc 20%, #aa7ecd 90%);
   width: 90%;
-  height: auto;
+  height: 100%;
   flex: 1;
   display: flex;
   align-items: center;
@@ -30,6 +30,9 @@ h1, h2{
   align-content: center;
   background-color: #2b2b2b;
   padding: 10px;
+}
+.score {
+  margin-left: 20px;
 }
 .stars {
   font-size: 30px;
@@ -153,7 +156,7 @@ img {
 .deck .card.match {
   cursor: default;
   background: #2b2b2b;
-    font-size: 33px;
+  font-size: 33px;
   animation-name: good;
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
@@ -165,7 +168,7 @@ img {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-duration: .50s;
-    background: #a37d00;
+  background: #a37d00;
 }
 .deck .card.disabled {
   pointer-events: none;
@@ -234,7 +237,7 @@ img {
   display: inline-block;
 }
 
-#play-again {
+#playAgain {
   background-color: #2b2b2b;
   padding: 0.7rem 1rem;
   font-size: 1.1rem;
@@ -244,153 +247,10 @@ img {
   color: #ffffff;
   border-radius: 5px;
 }
-#play-again:hover {background-color: #2f66a1}
+#playAgain:hover {background-color: #2f66a1}
 
-#play-again:active {
+#playAgain:active {
   background-color: #2f66a1;
   box-shadow: 0 5px #000000;
   transform: translateY(4px);
 }
-/*-----------------------animations--------------------------*/
-@keyframes flipper {
-  from {
-    transform: perspective(600px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(600px) rotate3d(1, 0, 0, -30deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(600px) rotate3d(1, 0, 0, 20deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(600px) rotate3d(1, 0, 0, -10deg);
-  }
-
-  to {
-    transform: perspective(600px);
-  }
-}
-
-@keyframes good {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(0.5, 1, 1.7);
-  }
-
-  40% {
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.7, 1, 0.5);
-  }
-
-  65% {
-    transform: scale3d(1, 1, 1);
-  }
-
-  75% {
-    transform: scale3d(0.5, 1, 1.7);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes sad {
-  from {
-    transform: rotate(0deg);
-  }
-  12% {
-    transform: rotate(12deg);
-  }
-  24% {
-    transform: rotate(24deg);
-  }
-  36% {
-    transform: rotate(36deg);
-  }
-  50% {
-    transform: rotate(50deg);
-  }
-  62% {
-    transform: rotate(36deg);
-  }
-  74% {
-    transform: rotate(24deg);
-  }
-  86% {
-    transform: rotate(12deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-/*---------------------responsive----------------*/
-@media screen and (max-width: 1354px){
-  .deck .card {
-    height: 130px;
-    width: 130px;
-}
-@media screen and (max-width: 1220px){
-  .deck .card {
-    height: 110px;
-    width: 110px;
-}
-@media screen and (max-width: 1066px){
-  .deck .card {
-    height: 90px;
-    width: 90px;
-}
-  img {
-    width: 0px;
-    height: 0px;
-}
-  button {
-  padding: 2px 5px;
-  font-size: 14px;
-}
-@media screen and (max-width: 895px){
-  .deck .card {
-    height: 70px;
-    width: 70px;
-}
-button {
-  padding: 2px 5px;
-  font-size: 14px;
-}
-@media screen and (max-width: 815px){
-  .main {
-    height: auto;
-    width: 90%;
-    flex-wrap: wrap;
-  }
-  .mainL {
-    width: 100%;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  .scorePanel{
-  	position: relative;
-  }
-  .spacer {
-    
-    
-  }
-  .mainR {
-    min-width: 500px;
-    clear: both;
-  }
