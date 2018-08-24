@@ -3,15 +3,13 @@ body {
   font-family: "Ariel", sans-serif;
   color: #f0f0f0;
 }
-
-
-h1, h2{
+h1, h2 {
   text-align: center;
   text-shadow: 2px 2px 4px #000;
   color: #f0c800;
 }
 /*main box*/
-.main{
+.main {
   background: linear-gradient(120deg, #86bdfc 20%, #aa7ecd 90%);
   width: 90%;
   height: 100%;
@@ -22,9 +20,8 @@ h1, h2{
   padding: 10vh;
 }
 /*Left box*/
-.mainL{
+.mainL {
   position: relative;
-
 }
 .scorePannel {
   align-content: center;
@@ -41,21 +38,17 @@ h1, h2{
   display: inline-block;
   margin: 0 5px 0 0;
 }
-
 .stars li {
   list-style: none;
   display: inline-block;
 }
-
 .fa-star {
   color: #f0f0f0;
 }
-
 .timer {
   display: inline-block;
   margin: 0 1rem;
 }
-
 button {
   float: right;
   display: inline-block;
@@ -71,14 +64,13 @@ button {
   border-radius: 15px;
   box-shadow: 0 6px #454545;
 }
-
-button:hover {background-color: #2f66a1}
-
+button:hover {
+  background-color: #2f66a1
+}
 button:active {
   background-color: #2f66a1;
   box-shadow: 0 5px #2b2b2b;
   transform: translateY(4px);
-
 }
 img {
   height: 380px;
@@ -88,10 +80,9 @@ img {
   width: 5%;
   height: 5%;
   position: relative;
-
 }
 /*deck of cards*/
-.mainR{
+.mainR {
   background-color: #2b2b2b;
   position: relative;
   width: 65%;
@@ -99,15 +90,14 @@ img {
 }
 .deck {
   padding: 32px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 0;
-    list-style-type: none;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
+  list-style-type: none;
 }
-
 .deck .card {
   margin: 10px;
   padding: 30px;
@@ -115,11 +105,8 @@ img {
   width: 150px;
   background: #5a92d1;
   background-image: /*pattern from http://lea.verou.me/css3patterns/#argyle*/
-       repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-       repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-       linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-       linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-       background-size: 70px 120px;
+    repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)), linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+  background-size: 70px 120px;
   font-size: 0;
   color: #ffffff;
   border-radius: 15px;
@@ -131,14 +118,10 @@ img {
 }
 .card:hover {
   background-color: #aa7ecd;
-  background-image:/*pattern from http://lea.verou.me/css3patterns/#argyle*/
-       repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-       repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-       linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-       linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-       background-size: 70px 120px;
+  background-image: /*pattern from http://lea.verou.me/css3patterns/#argyle*/
+    repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)), linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+  background-size: 70px 120px;
 }
-
 .deck .card.open {
   transform: rotateY(0);
   background: #2f66a1;
@@ -148,11 +131,9 @@ img {
   backface-visibility: visible !important;
   animation-duration: .75s;
 }
-
 .deck .card.show {
   font-size: 40px;
 }
-
 .deck .card.match {
   cursor: default;
   background: #2b2b2b;
@@ -162,7 +143,6 @@ img {
   backface-visibility: visible !important;
   animation-duration: .75s;
 }
-
 .deck .card.unmatched {
   animation-name: sad;
   -webkit-backface-visibility: visible !important;
@@ -186,12 +166,10 @@ img {
   visibility: hidden;
   opacity: 0;
 }
-
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
-  
 .popup {
   margin: 70px auto;
   padding: 20px;
@@ -201,11 +179,9 @@ img {
   position: relative;
   transition: all 5s ease-in-out;
 }
-  
 .popup h2 {
   margin-top: 0;
 }
-
 .popup .close {
   position: absolute;
   top: 20px;
@@ -216,27 +192,21 @@ img {
   text-decoration: none;
   color: #2b2b2b;
 }
-
 .popup .close:hover {
   color: #E5F720;
 }
-
-.popup .content-1,
-.content-2 {
+.popup .content-1, .content-2 {
   max-height: 800%;
   overflow: auto;
   text-align: center;
 }
-
 .show {
   visibility: visible !important;
   opacity: 100 !important;
 }
-
 #starRating li {
   display: inline-block;
 }
-
 #playAgain {
   background-color: #2b2b2b;
   padding: 0.7rem 1rem;
@@ -247,8 +217,9 @@ img {
   color: #ffffff;
   border-radius: 5px;
 }
-#playAgain:hover {background-color: #2f66a1}
-
+#playAgain:hover {
+  background-color: #2f66a1
+}
 #playAgain:active {
   background-color: #2f66a1;
   box-shadow: 0 5px #000000;

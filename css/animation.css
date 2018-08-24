@@ -4,56 +4,44 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
-
   40% {
     transform: perspective(600px) rotate3d(1, 0, 0, -30deg);
     animation-timing-function: ease-in;
   }
-
   60% {
     transform: perspective(600px) rotate3d(1, 0, 0, 20deg);
     opacity: 1;
   }
-
   80% {
     transform: perspective(600px) rotate3d(1, 0, 0, -10deg);
   }
-
   to {
     transform: perspective(600px);
   }
 }
-
 @keyframes good {
   from {
     transform: scale3d(1, 1, 1);
   }
-
   30% {
     transform: scale3d(0.5, 1, 1.7);
   }
-
   40% {
     transform: scale3d(1, 1, 1);
   }
-
   50% {
     transform: scale3d(1.7, 1, 0.5);
   }
-
   65% {
     transform: scale3d(1, 1, 1);
   }
-
   75% {
     transform: scale3d(0.5, 1, 1.7);
   }
-
   to {
     transform: scale3d(1, 1, 1);
   }
 }
-
 @keyframes sad {
   from {
     transform: rotate(0deg);

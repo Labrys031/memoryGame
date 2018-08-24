@@ -26,7 +26,7 @@
     height: 70px;
     width: 70px;
 }
-button {
+  button {
   padding: 2px 5px;
   font-size: 14px;
 }
@@ -34,13 +34,13 @@ button {
   header {
   	width: 100%;
   	position: relative;
-  }
+}
   .main {
     height: auto;
     width: 90%;
     flex-wrap: wrap;
     font-size: 14px;
-  }
+}
   .mainL {
     width: 100%;
     flex: 1;
@@ -54,18 +54,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
   .spacer {
-    height: 10px;
-    
-  }
+    height: 10px; 
+}
   .mainR {
     min-width: 430px;
     clear: both;
-  }
+}
   .popup {
   	width: 70%;
-  }
+}
   #playAgain {
   	width: 40%;
-  }
+}
